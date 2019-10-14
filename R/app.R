@@ -78,7 +78,8 @@ server <- function(input, output, session) {
           addMarkers(tab$lon, tab$lat, popup=paste(tab$actuele_naam_oko, "<br>",
                                                    tab$opvanglocatie_adres, "<br>",
                                                    tab$opvanglocatie_postcode, " ",
-                                                   tab$opvanglocatie_woonplaats))
+                                                   tab$opvanglocatie_woonplaats, "<br>",
+                                                   "<a href=\"",tab$contact_website, "\">", tab$contact_website, "</a>"))
   })
 }
 
